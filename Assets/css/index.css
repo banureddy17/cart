@@ -290,3 +290,34 @@ h2 {
 .timer {
   font-weight: 600;
 }
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  .login {
+    overflow-x: hidden;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main {
+    width: auto;
+    height: auto;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+  }
+  .movements {
+    height: 100%;
+    width: 100%;
+  }
+  .summary {
+    width: 50%;
+    height: 100%;
+  }
+}

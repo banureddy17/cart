@@ -5,6 +5,7 @@ var accBalance = document.querySelector(".balance__value");
 let transferUser = document.querySelector(".form__input--to");
 let transferAmount = document.querySelector(".form__input--amount");
 let loginPage = document.querySelector(".login");
+let wel = document.querySelector(".welcome");
 
 let userDetail = [
   {
@@ -53,10 +54,12 @@ function login() {
   if (currentUser && currentUser.pin === pin.value) {
     console.log("success");
     mainPage.style.opacity = 1;
+
     accBalance.innerHTML = currentUser.accBalance;
     user1 = currentUser;
     renderMovements(user1.movements);
-    loginPage.style.opacity = 1;
+    loginPage.style.display = "none";
+    wel.style.display = "none";
   } else {
     alert("Invalid user or pin");
   }
