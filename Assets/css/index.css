@@ -303,7 +303,7 @@ h2 {
     overflow-x: hidden;
     width: auto;
     height: auto;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -328,6 +328,7 @@ h2 {
   .summary {
     grid-row: 5 / 6;
     display: flex;
+    flex-direction: column;
     align-items: baseline;
     padding: 0 0.3rem;
     margin-top: 1rem;
@@ -359,7 +360,10 @@ h2 {
     padding-right: 0;
     border: none;
     background: none;
-    font-size: 1.1rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     cursor: pointer;
   }
